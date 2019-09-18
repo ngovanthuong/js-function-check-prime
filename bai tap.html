@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập: ");
+    function checkNum(num) {
+        let a = Math.sqrt(num);
+        let check=true;
+        for (let i = 2; i <= a; i++) {
+            if (num % i === 0) {
+                check = false;
+            }
+        }
+        if(check){
+            document.write(num+" la so nguyen to");
+        }else {
+            document.write(num+" khong la so nguyen to");
+        }
+
+
+    }
+    checkNum(number);
+</script>
+</body>
+</html>
